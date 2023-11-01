@@ -1,6 +1,6 @@
 import pandas as pd
 
-def read_excel(file_path, lab_no, header=[0,1], fn_col='FN', ln_col='LN', total_col='Total'):
+def read_excel(lab_section_name, lab_no, header=[0,1], fn_col='FN', ln_col='LN', total_col='Total'):
     """
     Reads an Excel file and returns a dictionary of student names and their corresponding total marks.
     This function is specifically formatted for CPSC 121 Lab Marksheets as of 9 Oct 2022, and needs to be updated in case of any changes to how marksheets are formatted.
@@ -19,6 +19,7 @@ def read_excel(file_path, lab_no, header=[0,1], fn_col='FN', ln_col='LN', total_
 
     lab_title = f"Lab {lab_no}" # The title of the lab sheet: 'Lab 1', 'Lab 2', etc.
 
+    file_path = lab_section_name + ".xlsx"
     df = pd.read_excel(file_path, sheet_name=lab_title, header=header)
 
     names = df[lab_title, fn_col] + ' ' + df[lab_title, ln_col]

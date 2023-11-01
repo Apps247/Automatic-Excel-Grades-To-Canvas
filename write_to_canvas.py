@@ -71,7 +71,7 @@ def update_grades(lab, section, student_grades):
     student_grades -- dictionary of student names and their corresponding total marks for the lab
     """
     
-    log("Retrieved grades from Excel:")
+    log("Retrieved grades from Excel")
     for student in student_grades:
         log("Student: " + str(student) + ", Grade: " + str(student_grades[student]), silent=True)
 
