@@ -71,11 +71,11 @@ def update_grades(lab, section, student_grades):
     student_grades -- dictionary of student names and their corresponding total marks for the lab
     """
     
-    log("Retrieved grades from Excel")
+    log(f"Retrieved {section} grades from Excel")
     for student in student_grades:
         log("Student: " + str(student) + ", Grade: " + str(student_grades[student]), silent=True)
 
-    log("\n\nWriting the above to Canvas...")
+    log(f"\n\nWriting {section} grades to Canvas...")
     for student in get_students(section):
         if student.user['name'] in student_grades:
             grade = student_grades[student.user['name']]
@@ -89,7 +89,7 @@ def update_grades(lab, section, student_grades):
                     log(f"Updated {student.user['name']}'s grade to {grade}.", silent=True)
         else:
             log(f"{student.user['name']} not found in Excel Sheet")
-    log("Operation completed")
+    log("Operation completed\n")
 
 
 def log(message, silent=False):

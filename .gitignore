@@ -1,5 +1,4 @@
 /LICENSE
-/README.md
 /__pycache__
 /sample.env
 /secrets.txt
@@ -9,3 +8,9 @@ log.txt
 onedrive_test.py
 read_excel_onedrive.py
 sample.env
+lab_excel_sheets/*
+sample.env
+*.xlsx
+sample.env
+sample.env
+*.env
