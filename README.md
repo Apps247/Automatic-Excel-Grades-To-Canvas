@@ -5,7 +5,10 @@
 ## Requirements
 * Python 3.5 or higher
 * Packages included in `requirements.txt`, can be installed with `pip3 install -r requirements.txt`
-* User has write access to Canvas course (set by default to CPSC 121 2023W1). API Key can be generated in Canvas > Profile > New Access Token. Paste the access token in `sample.env`
+* User has write access to Canvas course (set by default to CPSC 121 2023W1). API Key can be generated in Canvas > Profile > New Access Token. Paste the access token in `sample.env`, ensuring the file reads 
+`
+CANVAS_API_TOKEN=YOUR_TOKEN_HERE
+`
 
 ## Usage
 Run `python3 main.py`

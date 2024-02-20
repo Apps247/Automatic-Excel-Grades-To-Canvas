@@ -1,8 +1,8 @@
 from read_excel import read_excel
 from write_to_canvas import *
 
-CPSC_121_COURSE_CODE_CANVAS = 123413
-TERM = "2023W1"
+CPSC_121_COURSE_CODE_CANVAS = 130124
+TERM = "2023W2"
 
 print("CPSC 121 Lab Grade Automation Script by Aprameya Aithal\n")
 
